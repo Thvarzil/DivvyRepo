@@ -1,0 +1,75 @@
+<!--Author: Alfredo Rodriguez & Louie Lohebec-->
+<!--File: main.handlebars - HBS-->
+<!--Date: 12/2/2017-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!--CSS Templates-->
+    {{#each css}}
+        <link rel="stylesheet" href="{{this}}" type="text/css">
+    {{/each}}
+
+    <link rel="icon" href="{{icon}}">
+
+    <title>{{title}}</title>
+
+</head>
+
+<body cz-shortcut-listen="true" class="{{bodyName}}">
+
+
+{{#if success_msg}}
+
+    <div id="card-alert" class="card gradient-45deg-green-teal">
+        <div class="card-content white-text">
+            <p>
+                <i class="material-icons">check</i>{{success_msg}}</p>
+        </div>
+        <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+
+{{/if}}
+
+{{#if error_msg}}
+
+    <div id="card-alert" class="card gradient-45deg-red-pink">
+        <div class="card-content white-text">
+            <p>
+                <i class="material-icons">error</i>{{error_msg}}</p>
+        </div>
+        <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+
+{{/if}}
+
+{{#if error}}
+
+    <div id="card-alert" class="card gradient-45deg-red-pink">
+        <div class="card-content white-text">
+            <p>
+                <i class="material-icons">error</i>{{error}}</p>
+        </div>
+        <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+
+{{/if}}
+
+<!--Renders body of Index or Articles Saved-->
+{{{ body }}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+
+</body>
+</html>

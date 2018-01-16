@@ -1,0 +1,151 @@
+/*Logo*/
+header .brand-logo {
+    padding: 15px 20px;
+}
+
+header .brand-logo img {
+    height: 30px;
+}
+
+/*Mobile Button*/
+.btn-floating
+{
+    background-color: #7b1fa2;
+}
+
+/*Mobile Button Hover*/
+.btn-floating:hover
+{
+    background-color: #6a1b9a;
+}
+
+/*Mobile Button Focused on*/
+.btn-floating:focus
+{
+    background-color: #6a1b9a;
+}
+
+/*Side Nav Items Arranged*/
+ul.side-nav.leftside-navigation li:not(.no-padding).user-details
+{
+    margin-bottom: 0;
+}
+
+/*Profile Images*/
+.profile-image
+{
+    margin-top: 50%;
+    margin-bottom: 45%;
+}
+
+/*Rounded Box*/
+.circle
+{
+    border-radius: 10%;
+}
+
+ul.side-nav.leftside-navigation li:not(.no-padding) a {
+
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+/*Users Box information*/
+.user-details
+{
+    padding-bottom: 15px !important;
+}
+
+/*Different Pic for user*/
+#user-1
+{
+    background: url(http://res.cloudinary.com/alrod909/image/upload/v1511736764/divvy/23_ubktwb.png) no-repeat center center;
+}
+
+#user-2
+{
+    background: url(http://res.cloudinary.com/alrod909/image/upload/v1511736765/divvy/26_u2axpx.png) no-repeat center center;
+}
+
+/*User Info Alligned Properly*/
+.user-roal
+{
+    margin-bottom: -5px;
+    margin-top: -20px;
+}
+
+.logo-text
+{
+    letter-spacing: 0.4em;
+    padding-left: 20px !important;
+
+}
+
+/*Users Card info*/
+.card
+{
+    overflow: auto;
+}
+
+/*Fixing Footer*/
+.footer-copyright
+{
+    margin-top: 2px;
+}
+
+
+/*Google Maps*/
+.map-control {
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    font-family: "Roboto", sans-serif !important;
+    margin: 10px;
+    /* Hide the control initially, to prevent it from appearing
+       before the map loads. */
+    display: none;
+}
+/* Display the control once it is inside the map. */
+#map .map-control { display: block; }
+
+#map {
+    height: 800px;
+    width: 100%;
+}
+
+.selector-control {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#colorChanger
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#dropdown1
+{
+    white-space: nowrap; opacity: 1;
+    left: 865.234px;
+    position: absolute;
+    top: 130px;
+    display: none;
+}
+
+/*Search and Start ride maps*/
+#searchButtons
+{
+    margin-right: 85px;
+}
+
+/*Users Info Window*/
+#firstHeading {
+    font-size: 2.5em;
+}
+
+#content
+{
+    text-align: center;
+}
